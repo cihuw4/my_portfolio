@@ -129,16 +129,84 @@
 						if (!isSwitched) {
 							switchLabel.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1200px-Flag_of_Indonesia.svg.png')";
 							switchHandle.style.transform = 'translateX(5%)';
+							translateToIndonesian();
 							isSwitched = true;
 						} else {
 							switchLabel.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png')";
 							switchHandle.style.transform = 'translateX(120%)';
+							translateToEnglish();
 							isSwitched = false;
 						}
 					});
+
+					function translateToIndonesian() {
+						// Translate profile section
+						document.querySelector('.display-tc h3 span').textContent = 'Mahasiswa | Pengembang Web Junior';
+
+						// Translate About Me
+						document.querySelector('#fh5co-about .fh5co-heading .fh5co-heading-title').textContent = 'Tentang Saya';
+						document.querySelector('#fh5co-about .hello').textContent = 'Halo Semua!';
+						document.querySelector('#fh5co-about .col-md-8 p').innerHTML = 'Halo, saya Muhammad Rizky, seorang mahasiswa jurusan Informatika di AMIKOM Yogyakarta dengan fokus utama pada pengembangan web. Saya sangat antusias untuk belajar dan menerapkan teknologi web terbaru untuk menciptakan aplikasi yang inovatif dan berguna. Pengalaman akademik saya di AMIKOM telah membekali saya dengan pengetahuan mendalam dan keterampilan praktis di bidang ini.';
+						document.querySelector('#fh5co-about .col-md-8 p:nth-of-type(2)').innerHTML = 'Saya menikmati berkolaborasi dan berbagi ide dengan sesama mahasiswa dan profesional TI. Saya percaya bahwa melalui pembelajaran berkelanjutan dan kerja sama, kita dapat bersama-sama menciptakan solusi teknologi yang efektif dan memajukan dunia digital. Keterlibatan saya dalam komunitas teknologi adalah bagian dari komitmen saya untuk pertumbuhan berkelanjutan dan memberikan kontribusi positif.';
+
+						document.querySelector('.info li:nth-child(1) .first-block').textContent = 'Nama Lengkap:';
+						document.querySelector('.info li:nth-child(2) .first-block').textContent = 'Email:';
+						document.querySelector('.info li:nth-child(3) .first-block').textContent = 'Alamat:';
+
+						// Translate Resume
+						document.querySelector('#fh5co-resume .fh5co-heading .resume').textContent = 'Riwayat Saya';
+						document.querySelector('#fh5co-resume .work-experience').textContent = 'Pengalaman';
+						document.querySelector('#fh5co-resume .education').textContent = 'Pendidikan';
+						document.querySelector('#fh5co-resume .timeline-body p').textContent = 'Pada semester kelima saya, saya mendapatkan kesempatan untuk berpartisipasi dalam program Kampus Merdeka, khususnya studi independen di Binar Academy. Selama kesempatan ini, saya terdaftar dalam program Pengembang Web Fullstack, di mana proses pembelajaran berlangsung secara remote selama kurang lebih 6 bulan.';
+						document.querySelector('#fh5co-resume #primary-school').textContent = 'Sekolah Dasar';
+						document.querySelector('#fh5co-resume #primary-school-span').textContent = 'Pondok Pesantren Al-Muqodassah (2008-2014)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify1').textContent = 'Pada awal perjalanan pendidikan, saya bersekolah di Al-Muqodassah Islami Pondok Pesantren di Ponorogo. Di lembaga ini, kurikulum mencakup ilmu agama dan sosial, serta hafalan Alquran.'
+						document.querySelector('#fh5co-resume #junior-high-school').textContent = 'Sekolah Menengah Pertama & Akhir';
+						document.querySelector('#fh5co-resume #junior-high-school-span').textContent = 'Pondok Modern Darussalam Gontor (2014-2020)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify2').textContent = 'Saya kemudian melanjutkan perjalanan pendidikan di Pondok Pesantren Modern Darussalam Gontor, dimana program SMP dan SMA digabungkan menjadi kurikulum enam tahun. Lembaga ini sangat menekankan kedisiplinan dan menanamkan rasa tanggung jawab.'
+						document.querySelector('#fh5co-resume #community-service').textContent = 'Pengabdian Masyarakat';
+						document.querySelector('#fh5co-resume #community-service-span').textContent = 'Guru di Darul Ma\'arif Islamic Boarding School (2020)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify3').textContent = 'Setelah lulus dari Pondok Pesantren Modern Darussalam Gontor, saya dipercaya oleh pimpinan lembaga untuk menjalani program pengabdian masyarakat selama satu tahun sebagai prasyarat untuk menerima ijazah. Selama periode ini, saya ditugaskan di Pondok Pesantren Darul Ma\'arif, dimana saya bertugas sebagai guru siswa SMP dan pengawas asrama.'
+						document.querySelector('#fh5co-resume #college-student').textContent = 'Mahasiswa';
+						document.querySelector('#fh5co-resume #college-student-span').textContent = 'Universitas Amikom Yogyakarta (2021-Sekarang)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify4').textContent = 'Saya kemudian melanjutkan pendidikan sarjana saya di AMIKOM Yogyakarta, di mana saya mendaftar di program Ilmu Komputer. Dalam bidang studi ini, saya berusaha untuk belajar dan terlibat dalam pembelajaran mandiri tentang ilmu komputer dan disiplin ilmu terkait.'
+					}
+
+					function translateToEnglish() {
+						// Translate profile section
+						document.querySelector('.display-tc h3 span').textContent = 'College Student | Junior Web Developer';
+
+						// Translate About Me
+						document.querySelector('#fh5co-about .fh5co-heading .fh5co-heading-title').textContent = 'About Me';
+						document.querySelector('#fh5co-about .hello').textContent = 'Hello Everyone!'
+						document.querySelector('#fh5co-about .col-md-8 p').innerHTML = 'Hello, I\'m Muhammad Rizky, a student majoring in Informatics at AMIKOM Yogyakarta with a primary focus on web development. I am highly enthusiastic about learning and applying the latest web technologies to create innovative and useful applications. My academic experience at AMIKOM has equipped me with deep knowledge and practical skills in this field.';
+						document.querySelector('#fh5co-about .col-md-8 p:nth-of-type(2)').innerHTML = 'I enjoy collaborating and sharing ideas with fellow students and IT professionals. I believe that through continuous learning and cooperation, we can collectively create effective technological solutions and advance the digital world. My involvement in the technology community is part of my commitment to ongoing growth and making a positive contribution.';
+
+						document.querySelector('.info li:nth-child(1) .first-block').textContent = 'Full Name:';
+						document.querySelector('.info li:nth-child(2) .first-block').textContent = 'Email:';
+						document.querySelector('.info li:nth-child(3) .first-block').textContent = 'Address:';
+
+						// Translate Resume
+						document.querySelector('#fh5co-resume .fh5co-heading .resume').textContent = 'My Resume';
+						document.querySelector('#fh5co-resume .work-experience').textContent = 'Experience';
+						document.querySelector('#fh5co-resume .education').textContent = 'Education';
+						document.querySelector('#fh5co-resume .timeline-body p').textContent = 'In my fifth semester, I was given the opportunity to participate in the Independent Campus program, specifically the independent study at Binar Academy. During this opportunity, I enrolled in the Fullstack Web Developer program, where the learning process took place remotely for approximately 6 months.'
+						document.querySelector('#fh5co-resume #primary-school').textContent = 'Primary School';
+						document.querySelector('#fh5co-resume #primary-school-span').textContent = 'Al-Muqodassah Boarding School (2008-2014)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify1').textContent = 'At the beginning of my educational journey, I attended Al-Muqodassah Islamic Boarding School in Ponorogo. In this institution, the curriculum encompasses religious and social studies, alongside Quran memorization.'
+						document.querySelector('#fh5co-resume #junior-high-school').textContent = 'Junior & Senior High School';
+						document.querySelector('#fh5co-resume #junior-high-school-span').textContent = 'Darussalam Gontor Modern Islamic Boarding School (2014-2020)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify2').textContent = 'I then continued my educational journey at Darussalam Gontor Modern Islamic Boarding School, where the junior and senior high school programs are combined into a six-year curriculum. This institution places a strong emphasis on discipline and instilling a sense of responsibility.'
+						document.querySelector('#fh5co-resume #community-service').textContent = 'Community Service';
+						document.querySelector('#fh5co-resume #community-service-span').textContent = 'Teacher at Darul Ma\'arif Islamic Boarding School (2020)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify3').textContent = 'After graduating from Darussalam Gontor Modern Islamic Boarding School, I was entrusted by the head of the institution to undertake a one-year community service program as a prerequisite for receiving my diploma. During this period, I was assigned to Darul Ma\'arif Islamic Boarding School, where I served as a teacher for junior high school students and a supervisor of dormitory.';
+						document.querySelector('#fh5co-resume #college-student').textContent = 'College Student';
+						document.querySelector('#fh5co-resume #college-student-span').textContent = 'Amikom Yogyakarta University (2021-Now)';
+						document.querySelector('#fh5co-resume .timeline-body .text-justify4').textContent = 'I then pursued my undergraduate education at AMIKOM Yogyakarta, where I enrolled in the Computer Science program. In this field, I am dedicated to learning and actively participating in self-directed learning about computer science and disciplinary studies.';
+
+					}
 				});
 			</script>
-
 		</header>
 
 
@@ -147,7 +215,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>About Me</h2>
+						<h2 class="fh5co-heading-title">About Me</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -166,7 +234,7 @@
 				<div class="row" style="margin-top: 50px;">
 					<div class="col-md-8">
 						<!-- Konten col-md-8 di sini -->
-						<h2>Hello Everyone!</h2>
+						<h2 class="hello">Hello Everyone!</h2>
 						<p>Hello, I'm Muhammad Rizky, a student majoring in Informatics at AMIKOM Yogyakarta with a
 							primary focus on web development. I am highly enthusiastic about learning and applying the
 							latest web technologies to create innovative and useful applications. My academic experience
@@ -197,7 +265,7 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Resume</h2>
+						<h2 class="resume">My Resume</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -205,7 +273,7 @@
 						<ul class="timeline">
 							<li class="timeline-heading text-center animate-box">
 								<div>
-									<h3>Work Experience</h3>
+									<h3 class="work-experience">Experience</h3>
 								</div>
 							</li>
 							<li class="animate-box timeline-unverted">
@@ -228,18 +296,19 @@
 							<br>
 							<li class="timeline-heading text-center animate-box">
 								<div>
-									<h3>Education</h3>
+									<h3 class="education">Education</h3>
 								</div>
 							</li>
 							<li class="timeline-inverted animate-box">
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Primary School</h3>
-										<span class="company">Al-Muqodassah Boarding School (2008-2014)</span>
+										<h3 id="primary-school" class="timeline-title">Primary School</h3>
+										<span id="primary-school-span" class="company">Al-Muqodassah Boarding School (2008-2014)</span>
 									</div>
 									<div class="timeline-body">
-										<p>At the beginning of my educational journey, I attended Al-Muqodassah Islamic
+										<p class="text-justify1">At the beginning of my educational journey, I attended
+											Al-Muqodassah Islamic
 											Boarding School in Ponorogo. In this institution, the curriculum encompasses
 											religious and social studies, alongside Quran memorization.</p>
 									</div>
@@ -249,12 +318,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Junior & Senior High School</h3>
-										<span class="company">Darussalam Gontor Modern Islamic Boarding School
+										<h3 id="junior-high-school" class="timeline-title">Junior & Senior High School</h3>
+										<span id="junior-high-school-span" class="company">Darussalam Gontor Modern Islamic Boarding School
 											(2014-2020)</span>
 									</div>
 									<div class="timeline-body">
-										<p>I then continued my educational journey at Darussalam Gontor Modern Islamic
+										<p class="text-justify2">I then continued my educational journey at Darussalam Gontor Modern Islamic
 											Boarding School, where the junior and senior high school programs are
 											combined into a six-year curriculum. This institution places a strong
 											emphasis on discipline and instilling a sense of responsibility.</p>
@@ -265,12 +334,12 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Community Service</h3>
-										<span class="company">Teacher at Darul Ma'arif Islamic Boarding School
+										<h3 id="community-service" class="timeline-title">Community Service</h3>
+										<span id="community-service-span" class="company">Teacher at Darul Ma'arif Islamic Boarding School
 											(2020)</span>
 									</div>
 									<div class="timeline-body">
-										<p>After graduating from Darussalam Gontor Modern Islamic Boarding School, I was
+										<p class="text-justify3">After graduating from Darussalam Gontor Modern Islamic Boarding School, I was
 											entrusted by the head of the institution to undertake a one-year community
 											service program as a prerequisite for receiving my diploma. During this
 											period, I was assigned to Darul Ma'arif Islamic Boarding School, where I
@@ -283,11 +352,11 @@
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">College Student</h3>
-										<span class="company">Amikom Yogyakarta University (2021-Now)</span>
+										<h3 id="college-student" class="timeline-title">College Student</h3>
+										<span id="college-student-span" class="company">Amikom Yogyakarta University (2021-Now)</span>
 									</div>
 									<div class="timeline-body">
-										<p>I then pursued my undergraduate education at AMIKOM Yogyakarta, where I
+										<p class="text-justify4">I then pursued my undergraduate education at AMIKOM Yogyakarta, where I
 											enrolled in the Computer Science program. In this field of study, I
 											endeavored to learn and engage in self-directed learning about computer
 											science and related disciplines.</p>
