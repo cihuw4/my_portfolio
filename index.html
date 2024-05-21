@@ -170,6 +170,28 @@
 						document.querySelector('#fh5co-resume #college-student').textContent = 'Mahasiswa';
 						document.querySelector('#fh5co-resume #college-student-span').textContent = 'Universitas Amikom Yogyakarta (2021-Sekarang)';
 						document.querySelector('#fh5co-resume .timeline-body .text-justify4').textContent = 'Saya kemudian melanjutkan pendidikan sarjana saya di AMIKOM Yogyakarta, di mana saya mendaftar di program Ilmu Komputer. Dalam bidang studi ini, saya berusaha untuk belajar dan terlibat dalam pembelajaran mandiri tentang ilmu komputer dan disiplin ilmu terkait.'
+
+						// Translate My Services
+						document.querySelector('#fh5co-features .fh5co-heading .my-services').textContent = 'Layanan Saya';
+						document.querySelector('#fh5co-features .design').textContent = 'Desain';
+						document.querySelector('#fh5co-features .team-work').textContent = 'Kerja Tim';
+						document.querySelector('#fh5co-features .web-developent').textContent = 'Pengembangan Web';
+						document.querySelector('#fh5co-features .p-desaign').textContent = 'Saya sangat menyukai desain. Menggabungkan kreativitas dan fungsionalitas untuk menciptakan solusi yang menarik secara visual adalah sesuatu yang saya nikmati. Desain memberi saya ruang untuk mengekspresikan ide dan menghadirkan estetika pada setiap proyek.';
+						document.querySelector('#fh5co-features .p-teamwork').textContent = 'Saya menikmati bekerja dengan tim. Kolaborasi membawa keberagaman dan hasil yang lebih baik. Belajar dari anggota tim, efisien, dan membina hubungan positif.';
+						document.querySelector('#fh5co-features .p-webdevelopent').textContent = 'Saya sangat tertarik dengan pengembangan web. Membangun dan meningkatkan situs web memberi saya kepuasan. Saya menikmati proses menciptakan pengalaman online yang baik dan terlibat dengan teknologi terkini.';
+
+						// Translate Skills
+						document.querySelector('#fh5co-skills .skills').textContent = 'Kemampuan';
+
+						// Translate Work Results
+						document.querySelector('#fh5co-work .work-results').textContent = 'Hasil Projek';
+						document.querySelector('#fh5co-work .work-results-span1').textContent = 'Tugas Akhir di Kampus Merdeka x Binar Academy';
+						document.querySelector('#fh5co-work .work-results-span2').textContent = 'Tantangan dari BWA untuk menjadikan UI untuk Pasar Saham';
+						document.querySelector('#fh5co-work .work-results-span3').textContent = 'Website dimsum toko pribadi saya dengan akmal';
+						document.querySelector('#fh5co-work .work-results-span4').textContent = 'Tugas Akhir Struktur Data';
+
+						// Translate Footer
+						document.querySelector('.footer-copyright').textContent = 'Dibuat dengan ❤️ oleh Rizkyjackbar©';
 					}
 
 					function translateToEnglish() {
@@ -204,6 +226,27 @@
 						document.querySelector('#fh5co-resume #college-student-span').textContent = 'Amikom Yogyakarta University (2021-Now)';
 						document.querySelector('#fh5co-resume .timeline-body .text-justify4').textContent = 'I then pursued my undergraduate education at AMIKOM Yogyakarta, where I enrolled in the Computer Science program. In this field, I am dedicated to learning and actively participating in self-directed learning about computer science and disciplinary studies.';
 
+						// Translate My-Services
+						document.querySelector('#fh5co-features .fh5co-heading .my-services').textContent = 'My Services';
+						document.querySelector('#fh5co-features .design').textContent = 'Design';
+						document.querySelector('#fh5co-features .team-work').textContent = 'Team Work';
+						document.querySelector('#fh5co-features .web-developent').textContent = 'Web Developent';
+						document.querySelector('#fh5co-features .p-desaign').textContent = 'I really love design. Combining creativity and functionality to create visually appealing solutions is something I enjoy. Design gives me the space to express ideas and bring aesthetics to every project.';
+						document.querySelector('#fh5co-features .p-teamwork').textContent = 'I enjoy working with a team. Collaboration brings diversity and better results. Learning from team members, efficient, and fostering positive relationships.';
+						document.querySelector('#fh5co-features .p-webdevelopent').textContent = 'I am very interested in web development. Building and improving websites gives me satisfaction. I enjoy the process of creating a good online experience and engaging with the latest technology.';
+
+						// Translate Skills
+						document.querySelector('#fh5co-skills .skills').textContent = 'Skills';
+
+						// Translate Work Results
+						document.querySelector('#fh5co-work .work-results').textContent = 'Work Results';
+						document.querySelector('#fh5co-work .work-results-span1').textContent = 'Final Project at Kampus Merdeka x Binar Academy';
+						document.querySelector('#fh5co-work .work-results-span2').textContent = 'Challange from BWA to making UI for Saham Market';
+						document.querySelector('#fh5co-work .work-results-span3').textContent = 'My personal shop dimsum website with akmal';
+						document.querySelector('#fh5co-work .work-results-span4').textContent = 'Project Team Work in Amikom University';
+
+						// Translate Footer
+						document.querySelector('.footer-copyright').textContent = 'Made with ❤️ by Rizkyjackbar©';
 					}
 				});
 			</script>
@@ -383,7 +426,7 @@
 				<div class="services-padding">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>My Services</h2>
+							<h2 class="my-services">My Services</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -393,8 +436,9 @@
 									<i class="icon-paintbrush"></i>
 								</span>
 								<div class="feature-copy">
-									<h3>Design</h3>
-									<p>I really love design. Combining creativity and functionality to create visually
+									<h3 class="design">Design</h3>
+									<p class="p-desaign">I really love design. Combining creativity and functionality to
+										create visually
 										appealing solutions is something I enjoy. Design gives me the space to express
 										ideas and bring aesthetics to every project.</p>
 								</div>
@@ -406,8 +450,9 @@
 									<i class="icon-briefcase"></i>
 								</span>
 								<div class="feature-copy">
-									<h3>Team Work</h3>
-									<p>I enjoy working with a team. Collaboration brings diversity and better results.
+									<h3 class="team-work">Team Work</h3>
+									<p class="p-teamwork">I enjoy working with a team. Collaboration brings diversity
+										and better results.
 										Learning from team members, efficient, and fostering positive relationships.</p>
 								</div>
 							</div>
@@ -418,8 +463,9 @@
 									<i class="icon-bargraph"></i>
 								</span>
 								<div class="feature-copy">
-									<h3>Web Developent</h3>
-									<p>I am very interested in web development. Building and improving websites gives me
+									<h3 class="web-developent">Web Developent</h3>
+									<p class="p-webdevelopent">I am very interested in web development. Building and
+										improving websites gives me
 										satisfaction. I enjoy the process of creating a good online experience and
 										engaging with the latest technology.</p>
 								</div>
@@ -437,7 +483,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Skills</h2>
+						<h2 class="skills">Skills</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -510,7 +556,7 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Work Results</h2>
+						<h2 class="work-results">Work Results</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -518,8 +564,8 @@
 						<a href="https://devacademy.vercel.app" class="work"
 							style="background-image: url(images/portfolio-1.jpg);">
 							<div class="desc">
-								<h3>Dev Academy</h3>
-								<span>Final Project at Kampus Merdeka x Binar Academy</span>
+								<h3 class="dev-academy">Dev Academy</h3>
+								<span class="work-results-span1">Final Project at Kampus Merdeka x Binar Academy</span>
 							</div>
 						</a>
 					</div>
@@ -527,8 +573,8 @@
 						<a href="https://www.figma.com/proto/JhpwLBmX96hLy1Xakpr18I/Challange-BWA?type=design&node-id=27-404&t=1gaz9nSLJs66cs6f-0&scaling=scale-down&page-id=0%3A1"
 							class="work" style="background-image: url(images/portfolio-2.jpg);">
 							<div class="desc">
-								<h3>Jack Market</h3>
-								<span>Challange from BWA to making UI for Saham Market</span>
+								<h3 class="jack-market">Jack Market</h3>
+								<span class="work-results-span2">Challange from BWA to making UI for Saham Market</span>
 							</div>
 						</a>
 					</div>
@@ -536,8 +582,8 @@
 						<a href="https://housedimsum.vercel.app" class="work"
 							style="background-image: url(images/portfolio-3.jpg);">
 							<div class="desc">
-								<h3>DimsumHouse</h3>
-								<span>my personal shop dimsum website with akmal</span>
+								<h3 class="dimsum-house">DimsumHouse</h3>
+								<span class="work-results-span3">My personal shop dimsum website with akmal</span>
 							</div>
 						</a>
 					</div>
@@ -545,8 +591,8 @@
 						<a href="https://github.com/rizkyjackbar/fp-struktur-data.git" class="work"
 							style="background-image: url(images/portfolio-4.jpg);">
 							<div class="desc">
-								<h3>Final Projek Struktur Data</h3>
-								<span>Team work projek </span>
+								<h3 class="fp-struktur-data">Final Projek Struktur Data</h3>
+								<span class="work-results-span4">Project Team Work in Amikom University</span>
 							</div>
 						</a>
 					</div>
@@ -561,7 +607,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Made with ❤️ by Rizkyjackbar©</p>
+						<p class="footer-copyright">Made with ❤️ by Rizkyjackbar©</p>
 					</div>
 				</div>
 			</div>
