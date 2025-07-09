@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .timeline .timeline-heading {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 .timeline .timeline-heading > div h3 {
